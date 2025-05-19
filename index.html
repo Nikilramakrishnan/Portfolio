@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikil Ramakrishnan | Cloud Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      min-height: 100vh;
+      padding: 5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    section:nth-child(odd) {
+      background: linear-gradient(to bottom right, #1c1c1c, #111);
+    }
+    section:nth-child(even) {
+      background: linear-gradient(to bottom right, #001f3f, #003366);
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    h1, h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #00ffff;
+      text-shadow: 0 0 8px #00ffff;
+    }
+    p {
+      max-width: 800px;
+      line-height: 1.6;
+      font-size: 1.2rem;
+    }
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .skill {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+      animation: float 3s infinite ease-in-out;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+    }
+    .skill i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #00ffff;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+  </nav>
+
+  <section id="home">
+    <h1>Nikil Ramakrishnan</h1>
+    <p>Cloud Administrator | DevOps Enthusiast</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      <b>Cloud Administrator with a strong foundation in deploying, managing, and maintaining robust cloud-based infrastructure and services, specializing in Microsoft Azure. Skilled in troubleshooting complex issues, optimizing system performance, and ensuring high availability of cloud environments. Expanding expertise in DevOps practices, networking, and automation with proficiency in Bash scripting, Python, and Selenium for automation tasks. Experienced in managing IT infrastructure through Microsoft O365, MS tools, and ManageEngine application monitoring software. Adept at Windows and Linux administration, with working knowledge of Docker, containers, and microservices architecture. A problem solver committed to continuous learning and staying current with evolving cloud and DevOps technologies to drive efficient and scalable solutions.</b>
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="fab fa-aws"></i><span>AWS</span></div>
+      <div class="skill"><i class="fab fa-microsoft"></i><span>Azure</span></div>
+      <div class="skill"><i class="fas fa-code"></i><span>Terraform</span></div>
+      <div class="skill"><i class="fas fa-network-wired"></i><span>Ansible</span></div>
+      <div class="skill"><i class="fab fa-docker"></i><span>Docker</span></div>
+      <div class="skill"><i class="fab fa-containers"></i><span>containers</span></div>
+      <div class="skill"><i class="fas fa-cogs"></i><span>Jenkins</span></div>
+      <div class="skill"><i class="fab fa-github"></i><span>GitHub Actions</span></div>
+      <div class="skill"><i class="fas fa-terminal"></i><span>Bash</span></div>
+      <div class="skill"><i class="fab fa-python"></i><span>Python</span></div>
+      <div class="skill"><i class="fas fa-robot"></i><span>Selenium</span></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p><l1><b>Automation workflow for cloud tasks using Bash and Python </l1><br> 
+      <l2>OS & MySQL standalone migration in Azure </l2><br>
+      <l3>Custom monitoring using ManageEngine.</l3></b> </p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <p><b>MCSE <br> 
+      <a href="https://learn.microsoft.com/api/credentials/share/en-us/NikilR-0032/2CF8275FD939AAA9?sharingId=4BD57856ABCA632B" target="_blank" style="color:#00ffff; text-decoration: underline;">
+      Microsoft Certified Azure Administrator
+    </a><br>
+      ManageEngine App Manager Certified<br>
+       Web Penetration Testing</b></p>
+  </section>
+</body>
+</html>
